@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinyBolus — Support</title>
+  <style>
+    :root {
+      --text: #0F1719;
+      --muted: #5A6A6C;
+      --accent: #14707A;
+      --bg: #FFFFFF;
+      --border: #D9DFE1;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #E5EBEB;
+        --muted: #90A0A2;
+        --accent: #3DB5BF;
+        --bg: #0A1214;
+        --border: #1E2E30;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin: 0 0 4px;
+    }
+    h2 {
+      font-size: 12.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--muted);
+      margin: 36px 0 8px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0 4px;
+    }
+    p { margin: 12px 0; }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 36px;
+    }
+    .footer {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 56px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover { text-decoration-thickness: 2px; }
+    code {
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9em;
+      background: var(--border);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+    .contact-box {
+      margin: 8px 0 4px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>TinyBolus Support</h1>
+  <p class="meta">Help, questions, and how to reach us.</p>
+
+  <h2>Contact</h2>
+  <div class="contact-box">
+    <p style="margin:0;">
+      For any question, bug report, or feedback about TinyBolus, email
+      <a href="mailto:tinybolus@aethersomnus.com">tinybolus@aethersomnus.com</a>.
+      We aim to respond within a few working days.
+    </p>
+  </div>
+  <p>
+    When reporting a problem, it helps to include your device and OS
+    version, the app version (shown on the app's <strong>App
+    Information</strong> screen), and the steps that led to the issue.
+    Please do not include any patient-identifying information.
+  </p>
+
+  <h2>About the app</h2>
+  <p>
+    TinyBolus is a paediatric dosing reference for anaesthesia and
+    emergency medicine, intended for use by <strong>qualified healthcare
+    professionals</strong>. It presents weight- and age-scaled drug doses,
+    equipment sizes, and physiological reference ranges as a starting
+    point that must be verified against local protocols before use. It is
+    a reference tool — it does not diagnose, prescribe, or make treatment
+    decisions.
+  </p>
+
+  <h2>Common questions</h2>
+
+  <h3>How is a patient entered?</h3>
+  <p>
+    Enter the patient's age, and optionally a measured weight. When no
+    weight is given, it is estimated from age using standard APLS
+    age–weight formulas. A measured weight is always preferred when
+    available.
+  </p>
+
+  <h3>Where do the doses come from?</h3>
+  <p>
+    Every clinical figure is drawn from published references and
+    professional guidelines, and each is cited in the app's
+    <strong>References</strong> section. The complete machine-readable
+    formulary — doses, ranges, caps, and age brackets — is published for
+    peer review and audit at
+    <a href="https://github.com/SGP-Prime/tinybolusformulas">github.com/SGP-Prime/tinybolusformulas</a>.
+  </p>
+
+  <h3>Does the app work offline?</h3>
+  <p>
+    Yes. All calculations run locally on your device with no network
+    connection required. When online, the app quietly checks for an
+    updated formulary so dose corrections can reach every device without
+    a new app release; this update is one-way and sends no user or
+    patient data.
+  </p>
+
+  <h3>Does the app collect my data?</h3>
+  <p>
+    No. TinyBolus collects, stores, and transmits no patient or user
+    data. See the <a href="privacy.html">Privacy Policy</a> for details.
+  </p>
+
+  <h3>How do I change what's shown?</h3>
+  <p>
+    The settings screen (top-right on the main screen) lets you hide or
+    show individual drugs and whole sections, so the app can be tailored
+    to your practice. A short orientation card is available from the help
+    icon on first use.
+  </p>
+
+  <h2>Disclaimer</h2>
+  <p>
+    All presented values are starting estimates and must be verified
+    against current local protocols and product labelling before
+    administration. The authors and publisher assume no responsibility
+    for clinical decisions made using this application; users accept full
+    responsibility for verifying every value before it is used.
+  </p>
+
+  <p class="footer">
+    TinyBolus is published by Aether Somnus, Lda. Developed by
+    Sérgio Pinto, M.D. &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a>
+  </p>
+</body>
+</html>
